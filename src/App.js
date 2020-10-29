@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{Component,useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:"fff"
   },
   hero:{
+    
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat ",
     backgroundSize: "cover",
@@ -130,8 +131,7 @@ function App() {
                         </Typography>
 
                     </Box>
-                    <ThumbUpIcon/>
-                    <ThumbDownIcon/>
+                    <ThumbUpIcon />
 
                   </Box>
                   <Box >
