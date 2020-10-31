@@ -20,12 +20,14 @@ import Pagination from '@material-ui/lab/Pagination';
 
 
 
+
 const useStyles = makeStyles((theme) => ({
   appBar:{
-    backgroundColor:"fff"
+    backgroundColor:"#fff"
   },
   hero:{
-    
+    backgroundImage: 'linear-gradient(rgba(0, 0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1603269408830-3350aeb7bf24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1538&q=80")',
+    height: "500px",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat ",
     backgroundSize: "cover",
@@ -33,11 +35,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    color: "fff",
+    color: "#fff",
     fontSize: "4rem",
     [theme.breakpoints.down("sm")]:{
-      height:300,
-      fontSize:"3rem"
+    height:300,
+    fontSize:"3em"
+    
     }
   },
   blogsContainer: {
@@ -103,7 +106,7 @@ function App() {
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
-                    image="https://images.unsplash.com/photo-1530303053753-ed17bb09f08e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2552&q=80"
+                    src="https://images.unsplash.com/photo-1530303053753-ed17bb09f08e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2552&q=80"
                     title="Contemplative Reptile"
                   />
                   <CardContent>
@@ -119,7 +122,7 @@ function App() {
 
                 <CardActions className={classes.cardActions}>
                   <Box className={classes.author}>
-                    <Avatar src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"/ >
+                    <Avatar src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"/>
 
                     <Box ml={2}>
                       <Typography variant="subtitle2" component="p">
