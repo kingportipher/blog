@@ -17,10 +17,16 @@ import Avatar  from '@material-ui/core/Avatar';
 import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 import Pagination from '@material-ui/lab/Pagination';
+import {BiDownvote,BiUpvote} from 'react-icons/bi'
 
 
 
 
+function Increase(){
+  let a =0 ;
+ (a++)
+
+}
 const useStyles = makeStyles((theme) => ({
   appBar:{
     backgroundColor:"#fff"
@@ -85,14 +91,19 @@ function App() {
         <Toolbar>
          
           <Typography variant="h6" color="primary">
-            Blog
+                  <nav class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Home</a>
+                  <a class="navbar-brand" href="#">Sign Up</a>
+                  <a class="navbar-brand" href="#">Login</a>
+                  </nav>
+            
           </Typography>
          
         </Toolbar>
       </AppBar>
       <Box className={classes.hero}>
         <Box>
-          React Blog
+          Victor Abrokwah
           </Box>
         </Box>
         <Container maxWidth="lg" className={classes.blogsContainer}>
@@ -134,7 +145,8 @@ function App() {
                         </Typography>
 
                     </Box>
-                    <ThumbUpIcon />
+                    <BiDownvote onClick={Increase} />
+                    <BiUpvote/>
 
                   </Box>
                   <Box >
@@ -179,8 +191,8 @@ function App() {
                         </Typography>
 
                     </Box>
-                    <ThumbUpIcon/>
-                    <ThumbDownIcon/>
+                    <BiDownvote/>
+                    <BiUpvote/>
 
                   </Box>
                   <Box >
@@ -226,8 +238,8 @@ function App() {
                         </Typography>
 
                     </Box>
-                    <ThumbUpIcon/>
-                    <ThumbDownIcon/>
+                    <BiDownvote/>
+                    <BiUpvote/>
 
                   </Box>
                   <Box >
@@ -273,8 +285,8 @@ function App() {
                         </Typography>
 
                     </Box>
-                    <ThumbUpIcon/>
-                    <ThumbDownIcon/>
+                    <BiDownvote/>
+                    <BiUpvote/>
 
                   </Box>
                   <Box >
